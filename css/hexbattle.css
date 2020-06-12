@@ -1,0 +1,110 @@
+body {
+  background: linear-gradient(to bottom, #010310 0, #0c1142 24%, #45125e 45%, #d53567 60%, #0c1142 100%) fixed;
+  background-size: 100% var(--background-height, 100vh);
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: var(--background-height, 100vh);
+  z-index: -2;
+}
+
+.grid-header {
+  grid-area: header;
+}
+.grid-main {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.grid-block {
+  grid-area: block;
+  border: solid 1px #b3d4fc;
+
+}
+.grid-guns {
+  grid-area: guns;
+  border: solid 1px #b3d4fc;
+
+}
+.grid-gun0 {
+  grid-column-start: 1;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.centre-grid {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+
+.grid-img {
+  display: grid;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.grid-block-center {
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+.grid-block0 {
+  grid-column-start: 1;
+}
+.grid-block1 {
+  grid-column-start: 2;
+
+ }
+.grid-block2 {
+  grid-column-start: 3;
+}
+.grid-block3 {
+  grid-column-start: 4;
+}
+.grid-block4 {
+  grid-column-start: 5;
+}
+.grid-block5 {
+  grid-column-start: 6;
+}
+.grid-block6 {
+  grid-column-start: 7;
+}
+.grid-block7 {
+  grid-column-start: 8;
+}
+
+.grid-code {
+  grid-row-start: 6;
+  grid-column-start: 8;
+}
+
+.enemy {
+  position: absolute;
+  color: crimson;
+  text-align: center;
+  font-family: 'Road Rage';
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header header header header header"
+    "main main main main main main main main"
+    "main main main main main main main main"
+    "main main main main main main main main"
+    "main main main main main main main main"
+    "guns guns guns guns guns guns guns guns"
+    "block block block block block block block block";
+}
+

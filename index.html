@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/hexbattle.css">
+  <link rel="stylesheet" href="css/textformatting.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div id="container" class="grid">
+
+
+    <div onClick=shoot(0) id="two0"  style="color: #f9c80e" class="grid-block0 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(1) id="two1" style="color: #f9c80e"  class="grid-block1 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(2) id="two2" style="color: #f9c80e"  class="grid-block2 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(3) id="two3" style="color: #f9c80e"  class="grid-block3 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(4) id="two4" class="grid-block4 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(5) id="two5" class="grid-block5 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(6) id="two6" class="grid-block6 glow digital centre-grid grid-block-center">0</div>
+    <div onClick=shoot(7) id="two7" class="grid-block7 glow digital centre-grid grid-block-center">0</div>
+
+    <div id="score" style="text-align: left" class="grid-header glow outrun ">0</div>
+    <div id="level" style="text-align: right" class="grid-header glow outrun ">0</div>
+    <div id="title" style="justify-self: center; align-self: center" class="grid-header neon">Hex Battle</div>
+
+    <div  onClick=resetShooter() id="code" class="grid-code glow digital "></div>
+
+    <div onClick=start() id="startGame" class="grid-main" >
+      <div class="chrome shine" data-text="START">START <span class="spark"></span></div>
+    </div>
+    <div onClick=resetGame()  id="gameOver" class="grid-main hidden-content">
+      <div class="chrome shine" data-text="GAME">GAME<span class="spark"></span></div>
+      <div class="chrome shine" data-text="OVER" style="--shine-delay:1s;">OVER<span
+        class="spark spark-offset"></span></div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Scripts -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script  src="js/game.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
