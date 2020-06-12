@@ -187,3 +187,20 @@
   color:white;
   font-weight: 500;
 }
+
+/* smaller screens */
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .chrome {
+    font-size: calc(5px + 8vh);
+
+  }
+  .outrun {
+    font-size:30px;
+
+  }
+  .digital {
+    font-size:30px;
+
+  }
+}
