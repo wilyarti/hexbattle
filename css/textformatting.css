@@ -182,12 +182,18 @@
 
 .digital {
   font-family: 'Orbitron', sans-serif;
+  font-size:60px;
+  line-height:25px;
+  color:white;
+  font-weight: 500;
+}
+.big-text {
+  font-family: 'Orbitron', sans-serif;
   font-size:80px;
   line-height:25px;
   color:white;
   font-weight: 500;
 }
-
 /* smaller screens */
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
@@ -201,6 +207,10 @@
   }
   .digital {
     font-size:30px;
+
+  }
+  .big-text {
+    font-size:50px;
 
   }
 }

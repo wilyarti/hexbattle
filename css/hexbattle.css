@@ -1,12 +1,11 @@
 body {
-  background: linear-gradient(to bottom, #010310 0, #0c1142 24%, #45125e 45%, #d53567 60%, #0c1142 100%) fixed;
-  background-size: 100% var(--background-height, 100vh);
+  background-image: url("../img/Map_01_1536x2048.png");
   overflow: hidden;
   position: absolute;
   left: 0;
   top: 0;
   width: 100vw;
-  height: var(--background-height, 100vh);
+  height: 100vh;
   z-index: -2;
   overflow-x: hidden;
   position: relative;
@@ -56,6 +55,7 @@ html, body {
 }
 
 .grid-block-center {
+  padding-bottom: 40px;
   grid-row-start: 7;
   grid-row-end: 7;
 }
@@ -102,7 +102,7 @@ html, body {
 .grid {
   display: grid;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -114,4 +114,3 @@ html, body {
     "guns guns guns guns guns guns guns guns"
     "block block block block block block block block";
 }
-
