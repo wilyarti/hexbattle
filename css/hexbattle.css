@@ -1,16 +1,10 @@
 body {
   background-image: url("../img/Map_01_1536x2048.png");
   overflow: hidden;
-  position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: -2;
-  overflow-x: hidden;
-  position: relative;
-  min-height: 100%;
-
+  background-size: cover;
 }
 html, body {
   overflow-x: hidden;
